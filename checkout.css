@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    pad: 0;
+    background-color: #e4dfdc;
+}
+li,
+a,
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(210, 200, 190);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    padding: 9px 32px;
+    background-color: #2e2b2c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.workout {
+    background-image: url("images/workout.jpg");
+    height: 400px;
+    width: 100%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-menu li a {
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: black;
+}
+
+
+
+.qoute {
+    font-size: 48px;
+}
+
+.btn {
+    padding: 16px 48px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    width: 80%;
+}
+
+.btn:hover {
+    padding: 18px 64px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    width: 82%;
+}
+.body{
+    display: flex;
+    background-color: transparent;
+    height: 600px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.first{
+    height: 90%;
+    width: 55%;
+    background-color: white;
+    border-radius: 8px;
+}
+.second{
+    height: 90%;
+    width: 40%;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    margin: 6px;
+    background-color: transparent;
+}
+.content img{
+    height: 120px;
+    width: 120px;
+    background-color: #e4dfdc;
+    border-radius: 8px;
+}
+.content p{
+    margin-right: 35px;
+    margin-left: 10px;
+    font-size: 18px;
+    background-color: transparent;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: transparent;
+}
+.shipping{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: transparent;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: transparent;
+}
+.address{
+    display: flex;
+    margin: 10px;
+    background-color: transparent;
+}
+.caution{
+    background-color: transparent;
+    font-size: 12px;
+    margin: 5px;
+    margin-top: 12px;
+    color: grey;
+    font-family: 'Roboto';
+}
+.payment {
+    display: flex;
+    margin: 10px;
+    background-color: transparent;
+}
+.subtotal p{
+    background-color: transparent;
+}
+
+.shipping p{
+    background-color: transparent;
+}
+
+.total p{
+    background-color: transparent;
+}
+
+.address p{
+    background-color: transparent;
+}
+
+.payment p{
+    display: flex;
+    background-color: transparent;
+}
+.popup {
+    width: 400px;
+    background: #b2a29e;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    background-color: transparent;
+    font-family: 'Roboto';
+    color: white;
+}
+.popup p {
+    background-color: transparent;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: black;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup button:hover{
+    width: 100%;
+    margin-top: 50px;
+    background: grey;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

@@ -6,8 +6,17 @@
     pad: 0;
     background-color: #e4dfdc;
 }
+p{
+    font-family: 'Roboto';
+}
+h1{
+    font-family: 'Roboto';
+}
 
-
+html {
+    scroll-behavior: smooth;
+    scroll-margin: 20px;
+}
 li,
 a,
 button {
@@ -59,9 +68,9 @@ button {
 }
 
 button:hover {
-    padding: 9px 25px;
-    background-color: rgb(255, 255, 255);
-    color: black;
+    padding: 9px 32px;
+    background-color: #2e2b2c;
+    color: white;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -93,6 +102,14 @@ h1 {
     background-color: white;
     height: 350px;
     width: 300px;
+    border-radius: 8px;
+}
+.body-content img:hover {
+    background-color: #826F66;
+    height: 350px;
+    width: 300px;
+    border-radius: 8px;
+    opacity: 50%;
 }
 .body-content button {
     background-color: transparent;
@@ -103,6 +120,24 @@ h1 {
     padding-right: 24px;
     color: black;
 }
+.cart-Detail {
+    margin: 10px;
+    margin-top: 0;
+}
+.shop-item-price{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+}
+.body-content button:hover {
+    background-color: #826F66;
+    border-radius: 60px;
+    border: 0px solid #826F66;
+    font-size: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: white;
+}
 .product-content{
     display: flex;
     justify-content: space-between;
@@ -110,8 +145,67 @@ h1 {
 .product-content p{
    text-align: start;
 }
+
 .cart-container{
     height: 320px;
-    background-color: red;
+    background-color: transparent;
     margin-bottom: 100px;
+    margin: 16px;
 }
+.cart-Info {
+    margin: 10px;
+    margin-left: 5px;
+}
+
+.cart-Info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.total-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.total-container td {
+    padding: 15px;
+}
+.item-image {
+    border-radius: 8px;
+}
+th {
+    text-align: left;
+    padding: 10px;
+    color: white;
+    background-color: #826F66;
+}table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    line-height: 10px;
+}
+td input {
+    width: 40px;
+    padding: 5px;
+    color: black;
+}
+
+td button {
+    background-color: #826F66;
+    color: white;
+    border: 0;
+    margin: 20px;
+    margin-left: 0;
+}
+.cart-total-price{
+    font-weight: 600;
+    font-size: 24px;
+}
+.total{
+    width: 12%;
+}
+.checkout {
+    width: 20%;
+}
+
+

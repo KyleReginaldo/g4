@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Check Out</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo" height="64">
+        <nav>
+            <ul class="nav-menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="shop.html">
+                    <li>Collections</li>
+                </a>
+                <a href="account.html">
+                    <li>Account</li>
+                </a>
+            </ul>
+        </nav>
+        <button class="cta">Contact</button>
+    </header>
+    <div class="body">
+        <div class="first">
+            <div class="content">
+                <img src="images/ov3.png" alt="">
+                <p>Nike Air Max Pre-Day</p>
+                <p>₱6,999.00</p>
+            </div>
+            <div class="content">
+                <img src="images/ov3.png" alt="">
+                <p>Nike Air Max Pre-Day</p>
+                <p>₱6,999.00</p>
+            </div>
+            <div class="content">
+                <img src="images/ov3.png" alt="">
+                <p>Nike Air Max Pre-Day</p>
+                <p>₱6,999.00</p>
+            </div>
+            <hr style="margin: 8px;">
+            <div class="subtotal">
+                <p>Subtotal</p>
+                <p>₱20,997.00</p>
+            </div>
+            <div class="shipping">
+                <p>Shipping</p>
+                <p>₱100.00</p>
+            </div>
+            <hr style="margin: 8px;">
+            <div class="total">
+                <p>Total</p>
+                <p>₱21,097.00</p>
+            </div>           
+        </div>
+        <div class="second">
+            <div class="address">
+                <p>Address:&nbsp;</p>
+                <p>Block 23 Lot 22 Gentree Villas Pasong kawayan 1 General Trias Cavite</p>
+            </div>
+            <div class="payment">
+                <p>Payment Mode:</p>
+                <p>Cash on Delivery(COD)</p>
+            </div>
+            <br>
+            <button class="btn" onclick="openPopup()">Place Order</button>
+            <div class="popup" id="popup">
+                <img src="images/success.png">
+                <h2>Thank You</h2>
+                <p>Your order has been successfully placed. Thanks!</p>
+                <button type="button" onclick="window.location.href='success.html'">Done</button>
+            </div>
+            <p class="caution">Your order cannot be cancelled after you place your order so please think carefully</p>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+    </script>
+</body>
+</html>

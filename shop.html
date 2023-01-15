@@ -12,13 +12,13 @@
         <img class="logo" src="images/logo.png" alt="logo" height="64">
         <nav>
             <ul class="nav-menu">
-                <a href="#Home">
+                <a href="index.html">
                     <li>Home</li>
                 </a>
                 <a href="shop.html">
                     <li>Collections</li>
                 </a>
-                <a href="#Account">
+                <a href="account.html">
                     <li>Account</li>
                 </a>
             </ul>
@@ -30,7 +30,7 @@
             <div class="product">
                 <img class="item-image" src="images/ov2.png" alt="">
                 <div class="product-content">
-                    <p>Air Max Eme Emeru<br>Men Shoe's</p>
+                    <p class="item-name">Air Max Eme Emeru<br>Men Shoe's</p>
                 <button onclick="window.location.href='#cart'" class="add-to-cart" type="button">₱ 8,095</button>
             </div>
             </div>
@@ -95,12 +95,12 @@
         <div id="cart" class="total-container">
         <table>
             <tr>
-                <td>Total:</td>
+                <td class="total">Total:</td>
                 <td class="cart-total-price">₱ 0</td>
+                <td class="checkout"><button onclick="window.location.href='checkout.html'">Check Out</button></td>
             </tr>
         </table>
     </div>
-    <div class="btn"> <a class="checkout" href="checkout.html">Checkout</a></div>
     </div>
 </body>
 <script src="store.js" async>

@@ -76,9 +76,10 @@ function quantityChanged(event) {
 function addToCartClick(event) {
     var addcart = event.target
     var shopitem = addcart.parentElement
+    var item_Image = addcart.parentElement.parentElement;
     var itemname = shopitem.getElementsByClassName('item-name')[0].innerText
     var itemprice = shopitem.getElementsByClassName('add-to-cart')[0].innerText
-    var itemimage = shopitem.getElementsByClassName('item-image')[0].src
+    var itemimage = item_Image.getElementsByClassName('item-image')[0].src
     AddtoDisplayCart(itemname, itemimage, itemprice)
     updateCartTotal(event)
 }
@@ -100,6 +101,7 @@ function AddtoDisplayCart(itemname, itemimage, itemprice) {
             <img class="shop-item-image" src="${itemimage}" height="100" width="100">
             <div class="cart-Detail">
                 <p class="shop-item-title">${itemname}</p>
+                <br>
                 <small class="shop-item-price">${itemprice}</small><br>
                 <input class="cart-quantity-input" type="number" value="1">
                 <button class="remove-item" type="button">Remove</button>
