@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    pad: 0;
+    background-color: #e4dfdc;
+}
+
+li, a, button{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-menu{
+    list-style: none;
+}
+.nav-menu li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-menu li a{
+    transition: all 0.3s ease;
+}
+.nav-menu li a:hover {
+    color: black;
+}
+.qoute{
+    font-size: 48px;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgb(210, 200, 190);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+.explore-btn{
+    display: block;
+    text-align: center;
+}
+.explore-btn button{
+    padding: 9px 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.explore-btn button:hover {
+    padding: 9px 32px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.divider{
+    height: 320px;
+    width: 16px;
+    background-color: #2d2b2c;
+    margin: 32px;
+}
+.display-container{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+.title{
+    color: #2d2b2c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+}
+.subtitle {
+    color: #2d2b2c;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1em;
+}
+.image1{
+    background-color: transparent; 
+    transition: transform 100ms;
+    width: 100%;
+    max-width: 500px;
+    
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 40px;
+}
+.btn button{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 12px;
+    background-color: black;
+    color: white;
+}
+.btn button:hover {
+    padding: 9px 25px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.overview{
+    height: 200px;
+    width: 100%;
+    background-color: #ede8e6;
+    justify-content: start;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+.ovs{
+    background-color: transparent;
+    margin: 10px;
+}
+.ov1 img{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 16px;
+}
+.ov2 img{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 16px;
+}
+.ov3 img{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+
+
+@media (max-width: 700px){
+    .display-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .title {
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+            text-align: center;
+    }
+    
+    .subtitle {
+            color: black;
+            text-align: center;
+            font-size: 0.9em;
+    }
+        .image1 {
+            background-color: transparent;
+            transition: transform 100ms;
+            width: 100%;
+            max-width: 320px;
+    
+    }
+    .divider {
+        height: 4px;
+        width: 100%;
+        background-color: #2d2b2c;
+    }
+    .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+    }
+    
+    .btn button {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-right: 12px;
+    }
+.overview {
+    height: 600px;
+    width: 100%;
+    background-color: #e4dfdc;
+    margin-top: 20px;
+    flex-direction: wrap;
+}
+
+.ovs {
+    background-color: transparent;
+    margin: 10px;
+}
+
+.ov1 img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.ov2 img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.ov3 img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+}
+
+
+

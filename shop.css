@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    pad: 0;
+    background-color: #e4dfdc;
+}
+
+
+li,
+a,
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-menu li a {
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: black;
+}
+.qoute {
+    font-size: 48px;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(210, 200, 190);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+.image-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+}
+.body-content{
+    text-align: center;
+}
+.body-content img {
+    background-color: white;
+    height: 350px;
+    width: 300px;
+}
+.body-content button {
+    background-color: transparent;
+    border-radius: 60px;
+    border: 0 solid transparent;
+    font-size: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: black;
+}
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+.product-content p{
+   text-align: start;
+}
+.cart-container{
+    height: 320px;
+    background-color: red;
+    margin-bottom: 100px;
+}
